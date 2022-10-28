@@ -1,0 +1,16 @@
+.colToCenter {
+    display: flex;
+    justify-content: center;
+}
+
+#blockToHide {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+#submitButton {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+}

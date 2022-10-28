@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>IceCream</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-2">Ice Cream</h1>
+                </div>
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class="col colToCenter">
+                        <label for="numberOfScoops" class="form-label">Number of scoops:</label>
+                        <input type="number" id="numberOfScoops" min="1" max="4">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col colToCenter">
+                        <input type="radio" name="type" id="coneType" checked>
+                        <label for="coneType" class="form-label">Cone</label>
+                    </div>
+
+                    <div class="col colToCenter">
+                        <input type="radio" name="type" id="cupType">
+                        <label for="cupType" class="form-label">Cup</label>
+                    </div>
+                </div>
+
+                <div id="blockToHide">
+                    <div class="row">
+                        <h4>Toppings</h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="checkbox" id="sprinkles">
+                            <label for="sprinkles" class="form-label">Sprinkles($0.50)</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" id="whippedCream">
+                            <label for="whippedCream" class="form-label">Whipped Cream($0.25)</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" id="hotFudge">
+                            <label for="hotFudge" class="form-label">Hot Fudge($1.25)</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" id="cherry">
+                            <label for="cherry" class="form-label">Cherry($0.25)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="submitButton">Submit Order</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col colToCenter my-2">
+                        <label for="basePrice" class="form-label">Base price: </label>
+                        <input type="text" id="basePrice" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col colToCenter my-2">
+                        <label for="tax" class="form-label">Tax: </label>
+                        <input type="text" id="tax" readonly>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col colToCenter">
+                        <label for="totalDue" class="form-label">Total Due: </label>
+                        <input type="text" id="totalDue" readonly>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
